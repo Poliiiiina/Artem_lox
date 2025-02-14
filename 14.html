@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem_lox</title>
+    <link rel="stylesheet" href="14.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="bgoverlay">
+        <div class="container">
+          <span class="ico">
+            <span class="ico2"></span>
+            <span class="title">Нажми</span>
+          </span>
+          <div class="endtext">
+            <span class="close" title="Restart"><i class="fa fa-times"></i></span>
+            <h1>Будешь мои Валентином?</h1>
+            <h2>да куда ты денешься</h2>
+            <h3>~целую</h3>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      $(document).ready(function(){
+          $('.title').click(function(){
+            $('.container').addClass('open');
+          });
+
+          $('.close').click(function(){
+            $('.container').removeClass('open');
+          });
+      });
+    </script>
+</body>
+</html>
